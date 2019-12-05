@@ -8,6 +8,8 @@
 }
 
 .container::before{
+    background-size: 110%;
+    background-position: 0% 30%;
     content: "";
     width: 100%;
     background-repeat: no-repeat;
@@ -47,7 +49,7 @@ html{
 .header-text{
     color: white;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 8%;
     
 }
 
