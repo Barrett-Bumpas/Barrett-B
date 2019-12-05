@@ -1,5 +1,14 @@
-body{
+* {
     margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body{
+    
     
 }
 
@@ -13,6 +22,15 @@ body{
 }
 .header-text{
     font-size: 10px;
+    color: rgb(252, 248, 243);
+    text-align: center;
+    padding-top: 32%;
+    font-size: 28px;
+}
+
+.header-text-p{
+    color: rgb(252, 248, 243);
+    text-align: center;
 }
 
 
