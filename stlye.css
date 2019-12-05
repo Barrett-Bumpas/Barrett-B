@@ -1,0 +1,53 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 20vh;
+    transform-style: preserve-3d;
+}
+
+.container::before{
+    content: "";
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url(/Pictures/Trees.jpg);
+    position: absolute;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
+}
+
+
+.footer{
+    background-size: cover;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #aaaaaa;
+    z-index: 2;
+    position: relative;
+}
+
+body{
+    margin: 0;
+    font-size: 26px;
+    color: #ffffff;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+html{
+    overflow: hidden;
+}
+.header-text{
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    
+}
+
