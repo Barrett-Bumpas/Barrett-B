@@ -7,16 +7,22 @@
     transform-style: preserve-3d;
 }
 
+@media (max-width: 480px){
+    .container::before{
+        width: 480px;
+    }
+}
+
 .container::before{
-    background-size: 110%;
-    background-position: 0% 30%;
     content: "";
     width: 100%;
-    background-repeat: no-repeat;
     height: 100vh;
     top: 0;
     left: 0;
     background-image: url(/Pictures/Trees.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 0% 30%;
     position: absolute;
     z-index: -1;
     transform: translateZ(-1px) scale(2);
