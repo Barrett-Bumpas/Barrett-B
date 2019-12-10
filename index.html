@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="stlye.css"> 
 </head>
 <body>
-    <div class="container">
+    <div class="Container">
         <div class="header">
             <h1>Barrett Bumpas</h1>
             <p>Let's get creative.</p>
         </div>
     </div>
     
-    <div class="footer">
-        <p>I create websites with charm. Outside of you and your business, your website 
+    <div class="Content">
+        <div class="Menu">
+            <button id="Tabs" onclick="openTab(event, 'aboutMe')">About Me</button>
+        </div>
+        <!-- Tab Content -->
+        <div id="aboutMe" class="tabContent">
+            <p>I create websites with charm. Outside of you and your business, your website 
             is one of the best investments you could ever make. Please take a moment to 
             look over my site. Let's make something amazing.</p>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

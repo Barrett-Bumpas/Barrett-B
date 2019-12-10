@@ -8,7 +8,7 @@
     background: transparent;
 }
 
-.container{
+.Container{
     width: 100%;
     height: 280px;
     background-size: cover;
@@ -38,7 +38,7 @@
 }
 
 
-.footer{
+.Content{
     height: 1000px;
     background-color: #aaa;
     
@@ -47,6 +47,27 @@ p{
     padding: 2%;
 }
 
+.Menu{
+    background-color: #333333;
+}
+button{
+    background-color: blue;
+    margin: 5px;
+    margin-left: 8px;
+    padding: 5px;
+}
+button:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+.tabContent{
+    display: none;
+    animation: fadeEffect 1s;
+}
+@keyframes fadeEffect{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
 
 
 
@@ -55,7 +76,7 @@ p{
 
 @media screen and (min-width: 375px){
 
-.container{
+.Container{
     width: 100%;
     height: 400px;
     background-size: cover;
@@ -78,7 +99,7 @@ p{
 
 
 
-.footer{
+.Content{
     height: 1000px;
     background-color: #aaa;
     
