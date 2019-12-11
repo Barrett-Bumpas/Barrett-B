@@ -50,25 +50,42 @@ p{
 .Menu{
     background-color: #333333;
     overflow: hidden;
-    border: 1px solid #ccc;
     background-color: #f1f1f1;
     position: relative;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 0;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content{
+    padding-top: 102px;
 }
 .Menu button{
     background-color: inherit;
-    float: left;
     padding: 5px;
     transition: .3s;
     position: relative;
-    text-align: center;
-    left: 50%;
+    border: none;
+    letter-spacing: 1px;
+    outline: none;
+    background: none;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 .Menu button:hover{
-    background-color: #ddd;
+    background-color: black;
+    color: white;
     cursor: pointer;
 }
 .Menu button.active{
-    background-color: #ccc;
+    background: black;
+    color: white;
 }
 .tabContent{
     display: none;
