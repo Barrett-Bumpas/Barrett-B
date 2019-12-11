@@ -1,10 +1,17 @@
-var toggle = false;
-function openTab(){
-  if(toggle == false){
-    document.getElementById("aboutMe").style.display = "block";
-    toggle = true;
-  } else if (toggle == true){
-    document.getElementById("aboutMe").style.display = "none";
-    toggle = false;
+
+function openTab(evt, tabName){
+  var i, tabContent, tabLinks;
+
+  tabContent = document.getElementsByClassName("tabContent");
+  for (i = 0; i < tabContent.length; i++){
+    tabContent[i].style.display = "none";
   }
+
+  tabLinks = document.getElementsByClassName("tabLinks");
+  for (i = 0; i < tabLinks.length; i++){
+    tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
 }

@@ -49,16 +49,26 @@ p{
 
 .Menu{
     background-color: #333333;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    position: relative;
 }
-button{
-    background-color: blue;
-    margin: 5px;
-    margin-left: 8px;
+.Menu button{
+    background-color: inherit;
+    float: left;
     padding: 5px;
+    transition: .3s;
+    position: relative;
+    text-align: center;
+    left: 50%;
 }
-button:hover{
-    background-color: yellow;
+.Menu button:hover{
+    background-color: #ddd;
     cursor: pointer;
+}
+.Menu button.active{
+    background-color: #ccc;
 }
 .tabContent{
     display: none;
