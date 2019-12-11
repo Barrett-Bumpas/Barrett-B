@@ -62,8 +62,8 @@ p{
     top: 0;
     width: 100%;
 }
-.sticky + .content{
-    padding-top: 102px;
+.sticky + .tabContent{
+    padding-top: 41px;
 }
 .Menu button{
     background-color: inherit;
@@ -90,6 +90,7 @@ p{
 .tabContent{
     display: none;
     animation: fadeEffect 1s;
+    padding-top: 11px;
 }
 @keyframes fadeEffect{
     from{opacity: 0;}
