@@ -32,8 +32,12 @@ function openTab(evt, tabName){
 }
 
 var name = "BNB_USDT";
-var url = "http://anyorigin.com/go?url=" + encodeURIComponent('https://www.binance.com/en/trade/') 
-+ name + "&callback=?";
+$.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('https://www.binance.com/en/trade/BNB_USDT') 
++ '&callback=?', function(data){
+	console.log(data.contents);
+});
+/*
 $.get(url, function(response){
   console.log(response);
 });
+*/
