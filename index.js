@@ -34,4 +34,4 @@ function openTab(evt, tabName){
 var name = "BNB_USDT";
 $.get('https://www.binance.com/en/trade/' + name, function(response){
   console.log(response);
-})
+});
