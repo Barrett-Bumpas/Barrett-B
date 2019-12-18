@@ -30,3 +30,8 @@ function openTab(evt, tabName){
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+var name = "BNB_USDT";
+$.get('https://www.binance.com/en/trade/' + name, function(response){
+  console.log(response);
+})
