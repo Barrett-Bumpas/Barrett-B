@@ -31,10 +31,11 @@ function openTab(evt, tabName){
   evt.currentTarget.className += " active";
 }
 
+
 var name = "BNB_USDT";
-$.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('https://www.binance.com/en/trade/BNB_USDT') 
-+ '&callback=?', function(data){
-	console.log(data.contents);
+$.getJSON("GET", "https://cors-anywhere.herokuapp.com/https://www.binance.com/en/trade/BNB_USDT" 
+, function(data){
+	console.log(data.contents + "hi");
 });
 /*
 $.get(url, function(response){
