@@ -1,4 +1,10 @@
-html, body { height: 100%; margin: 0; padding: 0; }
+html { 
+    scroll-behavior: smooth;
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+body { height: 100%; margin: 0; padding: 0; }
 
 #header {
     width: 100%;
@@ -14,7 +20,8 @@ html, body { height: 100%; margin: 0; padding: 0; }
     justify-content: center;
     
 
-    background-image: url("/Pictures/Computer.jpg");
+    background-image: url("/Pictures/tracy-adams-TEemXOpR3cQ-unsplash.jpg");
+    background-position-y: -225px;
     
     
 }
@@ -31,12 +38,43 @@ html, body { height: 100%; margin: 0; padding: 0; }
 z-index: 1;
 color: white;
 font-size: 60px;
+background: black;
+padding: 5px 50px 5px 50px;
 }
 
 #header h2  {
     z-index: 1;
     color: white;
     font-size: 24px;
+    background: black;
+    padding: 5px 40px 5px 40px;
+}
+
+.goDownBtn {
+    position: absolute;
+    z-index: 1;
+    border: none;
+    background: transparent;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 25px;
+    padding-bottom: 50px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 600;
+    width: 200px;
+    height: 80px;
+    bottom: 10px;
+    cursor: pointer;
+    background-image: url("/Pictures/white-down-arrow-png-2.png");
+    
+    opacity: 1;
+    transition: .3s; 
+}
+
+#header button:hover{
+    opacity: .6;
 }
 
 #content  {
