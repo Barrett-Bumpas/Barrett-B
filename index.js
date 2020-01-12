@@ -10,35 +10,3 @@ function scrollFunction(){
     menu.classList.remove("sticky");
   }
 }
-
-
-
-
-function openTab(evt, tabName){
-  var i, tabContent, tabLinks;
-
-  tabContent = document.getElementsByClassName("tabContent");
-  for (i = 0; i < tabContent.length; i++){
-    tabContent[i].style.display = "none";
-  }
-
-  tabLinks = document.getElementsByClassName("tabLinks");
-  for (i = 0; i < tabLinks.length; i++){
-    tabLinks[i].className = tabLinks[i].className.replace(" active", "");
-  }
-
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-
-var name = "BNB_USDT";
-$.getJSON("GET", "https://cors-anywhere.herokuapp.com/https://www.binance.com/en/trade/BNB_USDT" 
-, function(data){
-	console.log(data.contents + "hi");
-});
-/*
-$.get(url, function(response){
-  console.log(response);
-});
-*/
