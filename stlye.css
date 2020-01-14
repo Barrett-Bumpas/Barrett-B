@@ -61,7 +61,7 @@ color: white;
 font-size: 60px;
 background: black;
 padding: 5px 50px 5px 50px;
-}
+} 
 
 #header h2  {
     z-index: 1;
@@ -101,5 +101,5 @@ padding: 5px 50px 5px 50px;
 #content  {
 height: 100%;
 width: 100%;
-position: relative;
+position: absolute;
 }
