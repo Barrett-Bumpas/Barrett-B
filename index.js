@@ -10,3 +10,9 @@ function scrollFunction(){
     menu.classList.remove("sticky");
   }
 }
+
+
+var button = document.getElementsByTagName("button");
+function changeWindow(){
+
+}
