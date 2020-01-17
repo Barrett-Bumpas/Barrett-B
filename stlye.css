@@ -58,6 +58,7 @@ body { height: 100%; margin: 0; padding: 0; }
 #header h1  {
 z-index: 1;
 color: white;
+cursor: default;
 font-size: 60px;
 background: black;
 padding: 5px 50px 5px 50px;
@@ -66,6 +67,7 @@ padding: 5px 50px 5px 50px;
 #header h2  {
     z-index: 1;
     color: white;
+    cursor: default;
     font-size: 24px;
     background: black;
     padding: 5px 40px 5px 40px;
